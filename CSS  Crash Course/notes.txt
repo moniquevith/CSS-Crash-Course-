@@ -1,0 +1,5 @@
+Box Model: a container that consists of multiple different properties 
+    - content 
+    - padding 
+    - border 
+    - margin
