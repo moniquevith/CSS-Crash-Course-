@@ -1,0 +1,11 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border: 15px solid rgb(255, 0, 0);
+    /* top, right bottom left */
+    padding: 15px 15px 15px 15px;
+    margin: 15px 15px 15px 15px; 
+    /* content box - just content , border box - content + padding + border, shrinks to fit in the box*/
+    box-sizing: content-box;
+}

@@ -1,5 +1,22 @@
 Box Model: a container that consists of multiple different properties 
     - content 
-    - padding 
+    - padding: make more space in contents 
     - border 
-    - margin
+    - margin: best practice to use this to separate element 
+
+Complex Properties: 
+    - display: 
+        - block: takes 100% width and starts on a new line e,g, <p> <div> 
+        - inline: doesnt allow you to set a width or height for element and starts on same line e.g. <span> <img>
+    - position:
+        - static: follows normal flow of the pge 
+        - relative: follows normal flow of page. Lets you position using top left bottom right
+            - in style css you would change position to relative 
+            - if you want to change the position of top, bottom, left, right. It would be the the position: 10px e.g. bottom: 10px
+        - absolute: does not follow normal flow of page. Lets you position with top, left, bottom, right. position is based off closest "position:relative" parent 
+            - doesnt take 100% of width need to set width 
+            - child of a relative parent position, if we set position it will be set to the t,l,b,r of that parent
+        - fixed: sticks element to a permanent location on the page. Lets you use t, l, b, r
+        - sticky: sticks element to a permanent location on page once it hits a threshold 
+
+What are media queries used for? used to make webpages responsive 
