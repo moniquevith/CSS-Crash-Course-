@@ -1,0 +1,70 @@
+.hi {
+    background-color: red;
+    color: white;
+    font-size: 24px;
+}
+
+/* for every device that is 576px you can change any element to match size */
+@media (max-width: 576px) {
+    .hi {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hi {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hi {
+        font-size: 18px;
+    }
+}
+
+.bye {
+    transition: background-colour 300ms;
+}
+
+.bye::before {
+    content: "add whatever before";
+}
+
+.bye::after {
+    content: "add whatever after";
+}
+
+.bye:hover {
+    background-color: rgb(192, 192, 247);
+}
+
+button {
+    /* alternate-reverse makes sure it doesnt just jump up so its smooth */
+    animation: float 2000ms infinite alternate-reverse;
+    transition: all 300ms;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* animate elements */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.nav__link {
+    color: black;
+}
+
+.nav__link--active {
+    color: purple;
+    font-weight: bold;
+}

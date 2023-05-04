@@ -1,3 +1,4 @@
+indexx2.html
 Box Model: a container that consists of multiple different properties 
     - content 
     - padding: make more space in contents 
@@ -19,4 +20,38 @@ Complex Properties:
         - fixed: sticks element to a permanent location on the page. Lets you use t, l, b, r
         - sticky: sticks element to a permanent location on page once it hits a threshold 
 
+index3.html
 What are media queries used for? used to make webpages responsive 
+    - 576px: mobile phones 
+    - 768px: tablets 
+    - 992px: desktops 
+    - 1200px + : large desktops
+
+pseudo selectors: 
+    - after: gp onto style.css 
+        e.g. 
+        div::before { 
+            content: "add whatever u want to add before the div"
+        }
+    - before 
+        e.g. 
+            div::after { 
+                content: "add whatever u want to add after the div"
+            }
+    - hover: when u hover over an element it will change colour. you can also set a transition of the hover (effects)
+        e.g. 
+            parent class 
+            div {
+                transition: background-colour 300ms; 
+            }
+            div:hover {
+                background-colour: ... 
+            }
+
+animation: moving elements 
+    - see style css 3 to see how I did moving button
+
+What is BEM? BEM (block-element-modifies) is a naming convention used for CSS classes to make them easier to read and understand. 
+    - B [block] is a block component 
+    - E [element] is dependent on the block component 
+    - M [modifier] is used to change style of the block 
